@@ -364,7 +364,7 @@ Therefore, many are limited to predicting a small number of frames or snapshots.
 For example, our main video diffusion model baseline, MCVD, trains on a maximum of 5 video frames due to GPU memory constraints <d-cite key="voleti2022mcvd"></d-cite>.
 
 <div class='l-body'>
-<img class="img-fluid" src="{{ site.baseurl }}/assets/img/2023-12-dyffusion/dyffusion-vs-video-diffusion-diagram.png">
+<img class="img-fluid" src="{{ site.baseurl }}/assets/img/2023-12-dyffusion/dyffusion-vs-video-diffusion-diagram.png" width="75%">
 <figcaption style="text-align: center; margin-top: 10px; margin-bottom: 10px">On the top row, we illustrate the direct application of a video diffusion model to dynamics forecasting for a horizon of $h=3$.
     On the bottom row, DYffusion generates continuous-time probabilistic forecasts for $\mathbf{x}_{t+1:t+h}$, given the initial conditions, $\mathbf{x}_t$.
     Our approach operates in the observation space at all times and does not need to model high-dimensional videos at each diffusion state.</figcaption>
