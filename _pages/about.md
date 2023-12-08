@@ -4,10 +4,11 @@ title: about
 permalink: /
 subtitle: |+
   <strong>I am a second-year PhD student at UC San Diego, advised by <a href="https://roseyu.com/">Prof. Rose Yu</a></strong>. 
-  <br>
-  My goal is to develop and use machine learning methods for positive real-world impact in areas like 
-  climate modeling, weather forecasting and sustainability. On the machine learning side, I am particularly interested in self-supervised
-  learning, spatiotemporal forecasting, and (conditional) generative modeling.
+  <br><br>
+  My goal is to develop and use machine learning (ML) methods for positive real-world impact in areas like 
+  _climate modeling, weather forecasting and sustainability_. 
+  On the ML side, I am particularly interested in _self-supervised
+  learning, spatiotemporal forecasting, and generative modeling_.
 
 profile:
   image: coronado-ferry-oval.png
