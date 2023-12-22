@@ -11,7 +11,7 @@ subtitle: |+
   learning, large-scale forecasting, and generative modeling</em>.  
 
 profile:
-  image: headshot-Nips13258.jpg 
+  image: headshot-Nips13258-large.jpg 
   image_circular: false # crops the image to make it circular
   address: false
 
