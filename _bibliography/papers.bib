@@ -5,14 +5,14 @@
   abbr={NeurIPS},
   abstract={While diffusion models can successfully generate data and make predictions, they are predominantly designed for static images. We propose an approach for efficiently training diffusion models for probabilistic spatiotemporal forecasting, where generating stable and accurate rollout forecasts remains challenging, Our method, DYffusion, leverages the temporal dynamics in the data, directly coupling it with the diffusion steps in the model. We train a stochastic, time-conditioned interpolator and a forecaster network that mimic the forward and reverse processes of standard diffusion models, respectively. DYffusion naturally facilitates multi-step and long-range forecasting, allowing for highly flexible, continuous-time sampling trajectories and the ability to trade-off performance with accelerated sampling at inference time. In addition, the dynamics-informed diffusion process in DYffusion imposes a strong inductive bias and significantly improves computational efficiency compared to traditional Gaussian noise-based diffusion models. Our approach performs competitively on probabilistic forecasting of complex dynamics in sea surface temperatures, Navier-Stokes flows, and spring mesh systems.},
   pdf={https://arxiv.org/abs/2306.01984},
-  OpenReview={https://openreview.net/forum?id=WRGldGm5Hz},
+  url={https://openreview.net/forum?id=WRGldGm5Hz},
   code={https://github.com/Rose-STL-Lab/dyffusion},
   poster={poster/dyffusion.pdf},
   slides={https://docs.google.com/presentation/d/e/2PACX-1vQqDOEW5CQWIafaTShAGzAfcbgvAH6t5YPUqTZTPIzToWDfFX776Xtz4Ly31b9654H5uA8dDJGve6aW/pub?start=false&loop=false&delayms=15000&slide=id.p},
   blog={https://salvarc.github.io/blog/2023/dyffusion/},
   year={2023},
-  selected={true},
-    bibtex_show={true}
+  bibtex_show={true},
+  selected={true}
 }
 
 @inproceedings{cachay2021climart,
@@ -22,11 +22,12 @@
     abbr={NeurIPS},
     abstract={Numerical simulations of Earth's weather and climate require substantial amounts of computation. This has led to a growing interest in replacing subroutines that explicitly compute physical processes with approximate machine learning (ML) methods that are fast at inference time. Within weather and climate models, atmospheric radiative transfer (RT) calculations are especially expensive. This has made them a popular target for neural network-based emulators. However, prior work is hard to compare due to the lack of a comprehensive dataset and standardized best practices for ML benchmarking. To fill this gap, we build a large dataset, ClimART, with more than \emph{10 million samples from present, pre-industrial, and future climate conditions}, based on the Canadian Earth System Model. ClimART poses several methodological challenges for the ML community, such as multiple out-of-distribution test sets, underlying domain physics, and a trade-off between accuracy and inference speed. We also present several novel baselines that indicate shortcomings of datasets and network architectures used in prior work.},
     pdf={https://arxiv.org/abs/2111.14671},
-    OpenReview={https://openreview.net/forum?id=FZBtIpEAb5J},
+    url={https://openreview.net/forum?id=FZBtIpEAb5J},
     code={https://github.com/RolnickLab/climart},
     poster={poster/climart.png},
     slides={slides/ClimART.pdf},
     year={2021},
+    bibtex_show={true},
     selected={true}
 }
 
@@ -41,6 +42,7 @@
   poster={poster/weasel.pdf},
   slides={slides/WeaSEL.pdf},
   year={2021},
+  bibtex_show={true},
   selected={true}
 }
 
@@ -55,6 +57,7 @@
     slides = {https://docs.google.com/presentation/d/e/2PACX-1vTt9E0ltCxATjL_zanekINnHttOr68dPypVxs7GZeq8tX-O4BYbY0sMJXZ6UEuLXwdW_n7oQTM8I23g/pub?start=false&loop=false&delayms=3000},
     media={https://ai4edatasetspublicassets.blob.core.windows.net/grantee-profiles/Salva%20Ruhling%20Cachay_EMEA_Climate_AI4E%20Grantee%20Profile_Final.pdf},
     year={2021},
+    bibtex_show={true},
     selected={true}
 }
 
@@ -68,5 +71,6 @@
   poster={poster/ICLR_DP_Misspecification.png},
   slides={slides/ICLR_DP_Misspecification.pdf},
   year={2021},
+  bibtex_show={true},
   selected={false}
 }
