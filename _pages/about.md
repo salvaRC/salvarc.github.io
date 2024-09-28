@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: |+
-  <strong>I am a second-year PhD student at UC San Diego, advised by <a href="https://roseyu.com/">Prof. Rose Yu</a></strong>. 
+  <strong>I am a third-year PhD student at UC San Diego, advised by <a href="https://roseyu.com/">Prof. Rose Yu</a></strong>. 
   <br>
   My goal is to develop and use machine learning (ML) methods for positive real-world impact in areas like 
   <em>climate modeling, weather forecasting and sustainability</em>. 
