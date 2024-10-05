@@ -4,8 +4,8 @@ title: about
 permalink: /
 subtitle: |+
   <strong>I am a third-year PhD student at UC San Diego, 
-  advised by <a href="https://roseyu.com/">Rose Yu</a> and <a href="https://duncanwp.github.io/">Duncan Watson-Parris</a></strong>. 
-  <br>
+  advised by <a href="https://roseyu.com/">Prof. Rose Yu</a> and <a href="https://duncanwp.github.io/">Prof. Duncan Watson-Parris</a></strong>.
+[//]: # (  <br>)
   My goal is to develop and use machine learning (ML) methods for positive real-world impact in areas like 
   <em>climate modeling, weather forecasting and sustainability</em>. 
   On the ML side, I am particularly interested in <em>self-supervised
