@@ -2,30 +2,10 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Most of my research has code open-sourced at GitHub.
+description: Most of my research has code open-sourced on [GitHub](https://github.com/salvaRC).
 nav: true
 nav_order: 3
 ---
-
-[//]: # (## GitHub Account)
-
-[//]: # ()
-[//]: # ({% if site.data.repositories.github_users %})
-
-[//]: # (<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">)
-
-[//]: # (  {% for user in site.data.repositories.github_users %})
-
-[//]: # (    {% include repository/repo_user.html username=user %})
-
-[//]: # (  {% endfor %})
-
-[//]: # (</div>)
-
-[//]: # ({% endif %})
-
-[//]: # ()
-[//]: # (---)
 
 ## GitHub Repositories
 
@@ -36,3 +16,23 @@ nav_order: 3
   {% endfor %}
 </div>
 {% endif %}
+
+## GitHub Account
+
+
+{% if site.data.repositories.github_users %}
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+
+  {% for user in site.data.repositories.github_users %}
+
+    {% include repository/repo_user.html username=user %}
+
+  {% endfor %}
+
+</div>
+
+{% endif %}
+
+
+---
