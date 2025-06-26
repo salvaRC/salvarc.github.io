@@ -22,6 +22,14 @@
   - firstname: ["Artur"]
     url: https://www.ri.cmu.edu/ri-faculty/artur-w-dubrawski/
 
+"Erickson":
+  - firstname: ["Emma"]
+    url: https://www.ri.cmu.edu/ri-people/emma-erickson/
+
+"Fender C. Bucker":
+  - firstname: ["Arthur"]
+    url: https://arthurfenderbucker.github.io/
+
 "Henn":
   - firstname: ["Brian"]
     url: https://scholar.google.com/citations?user=t2tJH5EAAAAJ
@@ -37,6 +45,14 @@
 "Osei":
   - firstname: ["Salomey"]
     url: https://scholar.google.com/citations?user=32M1HMsAAAAJ
+
+"Pokropek":
+  - firstname: ["Ernest"]
+    url: https://scholar.google.com/citations?user=jiLNEg0AAAAJ&hl=pl
+
+"Potosnak":
+  - firstname: ["Willa"]
+    url: https://potosnakw.github.io/
 
 "Ramesh":
   - firstname: ["Venkatesh"]
