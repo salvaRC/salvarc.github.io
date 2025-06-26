@@ -1,3 +1,7 @@
+"Aittala":
+  - firstname: ["Miika"]
+    url: https://scholar.google.com/citations?user=-_EKVQ0AAAAJ&hl=en
+
 "Bire":
   - firstname: ["Suyash"]
     url: https://eapsweb.mit.edu/people/bire
@@ -9,6 +13,10 @@
 "Boecking":
   - firstname: ["Benedikt"]
     url: https://benbo.github.io/
+
+"Brenowitz":
+  - firstname: ["Noah"]
+    url: https://www.noahbrenowitz.com/
 
 "Bretherton":
   - firstname: ["Christopher S."]
@@ -38,9 +46,17 @@
     - firstname: ["Hailey"]
       url: https://haileyjoren.github.io/
 
+"Kreis":
+  - firstname: ["Karsten"]
+    url: https://karstenkreis.github.io/
+
 "Lütjens":
   - firstname: ["Bjorn", "Björn"]
     url: https://blutjens.github.io/
+
+"Mardani":
+  - firstname: ["Morteza"]
+    url: https://scholar.google.com/citations?user=pjcBeJYAAAAJ&hl=en
 
 "Osei":
   - firstname: ["Salomey"]
@@ -65,6 +81,10 @@
 "Rolnick":
   - firstname: ["David"]
     url: http://www.davidrolnick.com/
+
+"Vahdat":
+  - firstname: ["Arash"]
+    url: https://scholar.google.com/citations?user=p9-nlRIAAAAJ&hl=en
 
 "Watt-Meyer":
   - firstname: ["Oliver"]
