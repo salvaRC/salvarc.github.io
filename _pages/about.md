@@ -21,10 +21,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 <p>
-In the past, I've had the opportunity to intern with and contribute to ML for climate & weather research at Jump Trading, NVIDIA, the Allen Institute for AI (Ai2), the Palo Alto Research Center (PARC), and the <a href="https://mila.quebec/en/">Mila - Quebec AI Institute</a>.
-
-[//]: # (Before, I had the pleasure to work with <a href="https://davidrolnick.com/">Prof. David Rolnick</a>)
-[//]: # (on climate change+ML at <a href="https://mila.quebec/en/">Mila - Quebec AI Institute</a>.)
+In the past, I've had the opportunity to intern with and contribute to ML for climate & weather research at <a href="https://www.jumptrading.com">Jump Trading</a>, <a href="https://research.nvidia.com/labs/genair/">NVIDIA</a>, the <a href="https://allenai.org/climate-modeling">Allen Institute for AI (Ai2)</a>, the <a href="https://www.sri.com/research/future-concepts-division/">Palo Alto Research Center (PARC)</a>, and the <a href="https://mila.quebec/en/">Mila - Quebec AI Institute</a>.
 </p>
 <p>
 I got started in ML research through a project on weakly supervised learning
