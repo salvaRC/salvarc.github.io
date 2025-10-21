@@ -21,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 <p>
-I was a research intern at the Allen Institute for AI (AI2) and Palo Alto Research Center (PARC) during the summers of 2023 and 2022, focusing on machine learning for climate modeling.
+In the past, I've had the opportunity to intern with and contribute to research at Jump Trading, NVIDIA, the Allen Institute for AI (Ai2), and the Palo Alto Research Center (PARC).
 Before, I had the pleasure to work with <a href="https://davidrolnick.com/">Prof. David Rolnick</a>
 on climate change+ML at <a href="https://mila.quebec/en/">Mila - Quebec AI Institute</a>.
 </p>
