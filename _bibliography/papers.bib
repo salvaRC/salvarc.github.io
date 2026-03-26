@@ -1,6 +1,16 @@
+@inproceedings{cachay2026ucast,
+    title={U-Cast: A Surprisingly Simple and Efficient Frontier AI Probabilistic Weather Forecaster},
+    author={Salva Rühling Cachay and Duncan Watson-Parris and Rose Yu},
+    abbr={},
+    booktitle={},
+    year={2026},
+    bibtex_show={true},
+    selected={true}
+}
+
 @inproceedings{cachay2025erdm,
     title={Elucidated Rolling Diffusion Models for Probabilistic Forecasting of Complex Dynamics},
-    author={R{\"u}hling Cachay, Salva and Aittala, Miika and Kreis, Karsten and Brenowitz, Noah and Vahdat, Arash and Mardani, Morteza and Yu, Rose},
+  author={Salva Rühling Cachay and Miika Aittala and Karsten Kreis and Noah Brenowitz and Arash Vahdat and Morteza Mardani and Rose Yu},
     abbr={NeurIPS},
     booktitle={Advances in Neural Information Processing Systems},
     abstract={Diffusion models are a powerful tool for probabilistic forecasting, yet most applications in high-dimensional chaotic systems predict future snapshots one-by-one. This common approach struggles to model complex temporal dependencies and fails to explicitly account for the progressive growth of uncertainty inherent to such systems. While rolling diffusion frameworks, which apply increasing noise to forecasts at longer lead times, have been proposed to address this, their integration with state-of-the-art, high-fidelity diffusion techniques remains a significant challenge. We tackle this problem by introducing Elucidated Rolling Diffusion Models (ERDM), the first framework to successfully unify a rolling forecast structure with the principled, performant design of Elucidated Diffusion Models (EDM). To do this, we adapt the core EDM components-its noise schedule, network preconditioning, and Heun sampler-to the rolling forecast setting. The success of this integration is driven by three key contributions: (i) a novel loss weighting scheme that focuses model capacity on the mid-range forecast horizons where determinism gives way to stochasticity; (ii) an efficient initialization strategy using a pre-trained EDM for the initial window; and (iii) a bespoke hybrid sequence architecture for robust spatiotemporal feature extraction under progressive denoising. On 2D Navier-Stokes simulations and ERA5 global weather forecasting at 1.5^\circ resolution, ERDM consistently outperforms key diffusion-based baselines, including conditional autoregressive EDM. ERDM offers a flexible and powerful general framework for tackling diffusion-based sequence generation problems where modeling escalating uncertainty is paramount.},
@@ -16,7 +26,7 @@
 
 @inproceedings{cachay2024probemulation,
   title={Probabilistic Emulation of a Global Climate Model with {Spherical DYffusion}},
-  author={R{\"u}hling Cachay, Salva and Henn, Brian and Watt-Meyer, Oliver and Bretherton, Christopher S. and Yu, Rose},
+  author={Salva Rühling Cachay and Brian Henn and Oliver Watt-Meyer and Christopher S. Bretherton and Rose Yu},
   booktitle={Advances in Neural Information Processing Systems},
   abbr={NeurIPS},
   award = {Spotlight},
@@ -35,7 +45,7 @@
 
 @inproceedings{cachay2023dyffusion,
   title={{DYffusion:} A Dynamics-informed Diffusion Model for Spatiotemporal Forecasting},
-  author={R{\"u}hling Cachay, Salva and Zhao, Bo and Joren, Hailey and Yu, Rose},
+  author={Salva Rühling Cachay and Bo Zhao and Hailey Joren and Rose Yu},
   booktitle={Advances in Neural Information Processing Systems},
   abbr={NeurIPS},
   abstract={While diffusion models can successfully generate data and make predictions, they are predominantly designed for static images. We propose an approach for efficiently training diffusion models for probabilistic spatiotemporal forecasting, where generating stable and accurate rollout forecasts remains challenging, Our method, DYffusion, leverages the temporal dynamics in the data, directly coupling it with the diffusion steps in the model. We train a stochastic, time-conditioned interpolator and a forecaster network that mimic the forward and reverse processes of standard diffusion models, respectively. DYffusion naturally facilitates multi-step and long-range forecasting, allowing for highly flexible, continuous-time sampling trajectories and the ability to trade-off performance with accelerated sampling at inference time. In addition, the dynamics-informed diffusion process in DYffusion imposes a strong inductive bias and significantly improves computational efficiency compared to traditional Gaussian noise-based diffusion models. Our approach performs competitively on probabilistic forecasting of complex dynamics in sea surface temperatures, Navier-Stokes flows, and spring mesh systems.},
@@ -52,7 +62,7 @@
 
 @inproceedings{cachay2021climart,
     title={{ClimART}: A Benchmark Dataset for Emulating Atmospheric Radiative Transfer in Weather and Climate Models},
-    author={R{\"u}hling Cachay*, Salva and Ramesh*, Venkatesh and Cole, Jason N. S. and Barker, Howard and Rolnick, David},
+  author={Salva Rühling Cachay and Venkatesh Ramesh and Jason N. S. Cole and Howard Barker and David Rolnick},
     booktitle={Advances in Neural Information Processing Systems Datasets and Benchmarks Track},
     abbr={NeurIPS},
     abstract={Numerical simulations of Earth's weather and climate require substantial amounts of computation. This has led to a growing interest in replacing subroutines that explicitly compute physical processes with approximate machine learning (ML) methods that are fast at inference time. Within weather and climate models, atmospheric radiative transfer (RT) calculations are especially expensive. This has made them a popular target for neural network-based emulators. However, prior work is hard to compare due to the lack of a comprehensive dataset and standardized best practices for ML benchmarking. To fill this gap, we build a large dataset, ClimART, with more than \emph{10 million samples from present, pre-industrial, and future climate conditions}, based on the Canadian Earth System Model. ClimART poses several methodological challenges for the ML community, such as multiple out-of-distribution test sets, underlying domain physics, and a trade-off between accuracy and inference speed. We also present several novel baselines that indicate shortcomings of datasets and network architectures used in prior work.},
@@ -68,7 +78,7 @@
 
 @inproceedings{cachay2021endtoend,
   title={End-to-End Weak Supervision},
-  author={R{\"u}hling Cachay, Salva and Boecking, Benedikt and Dubrawski, Artur},
+  author={Salva Rühling Cachay and Benedikt Boecking and Artur Dubrawski},
   booktitle={Advances in Neural Information Processing Systems},
   abbr={NeurIPS},
   abstract={Aggregating multiple sources of weak supervision (WS) can ease the data-labeling bottleneck prevalent in many machine learning applications, by replacing the tedious manual collection of ground truth labels. Current state of the art approaches that do not use any labeled training data, however, require two separate modeling steps: Learning a probabilistic latent variable model based on the WS sources -- making assumptions that rarely hold in practice -- followed by downstream model training. Importantly, the first step of modeling does not consider the performance of the downstream model. To address these caveats we propose an end-to-end approach for directly learning the downstream model by maximizing its agreement with probabilistic labels generated by reparameterizing previous probabilistic posteriors with a neural network. Our results show improved performance over prior work in terms of end model performance on downstream test sets, as well as in terms of improved robustness to dependencies among weak supervision sources.},
@@ -84,7 +94,7 @@
 
 @article{cachay2021world,
     title={The World as a Graph: Improving El Ni\~no Forecasts with Graph Neural Networks},
-    author={R{\"u}hling Cachay, Salva and Erickson, Emma and  Fender C. Bucker, Arthur and Pokropek, Ernest and Potosnak, Willa and Bire, Suyash and Osei, Salomey and Björn Lütjens},
+    author={Salva Rühling Cachay and Emma Erickson and Arthur Fender C. Bucker and Ernest Pokropek and Willa Potosnak and Suyash Bire and Salomey Osei and Björn Lütjens},
     journal={arXiv:2310.14189},
     abbr={arXiv},
     abstract={Deep learning-based models have recently outperformed state-of-the-art seasonal forecasting models, such as for predicting El Ni~no-Southern Oscillation (ENSO). However, current deep learning models are based on convolutional neural networks which are difficult to interpret and can fail to model large-scale atmospheric patterns. In comparison, graph neural networks (GNNs) are capable of modeling large-scale spatial dependencies and are more interpretable due to the explicit modeling of information flow through edge connections. We propose the first application of graph neural networks to seasonal forecasting. We design a novel graph connectivity learning module that enables our GNN model to learn large-scale spatial interactions jointly with the actual ENSO forecasting task. Our model, \graphino, outperforms state-of-the-art deep learning-based models for forecasts up to six months ahead. Additionally, we show that our model is more interpretable as it learns sensible connectivity structures that correlate with the ENSO anomaly pattern.},
@@ -100,7 +110,7 @@
 
 @inproceedings{cachay2021dependency,
   title={Dependency Structure Misspecification in Multi-Source Weak Supervision Models},
-  author={R{\"u}hling Cachay, Salva and Boecking, Benedikt and Dubrawski, Artur},
+  author={Salva Rühling Cachay and Benedikt Boecking and Artur Dubrawski},
   booktitle={ICLR Weakly Supervised Learning workshop and NeurIPS 2020 LatinX in AI workshop },
   abbr={ICLR Workshop},
   award={Oral},
