@@ -3,6 +3,7 @@
     author={Salva Rühling Cachay and Duncan Watson-Parris and Rose Yu},
     abbr={ICML},
     booktitle={International Conference on Machine Learning},
+    abstract={AI-based weather forecasting now rivals traditional physics-based ensembles, but state-of-theart (SOTA) models rely on specialized architectures and massive computational budgets, creating a high barrier to entry. We demonstrate that such complexity is unnecessary for frontier performance. We introduce U-Cast, a probabilistic forecaster built on a standard U-Net backbone trained with a simple recipe: deterministic pretraining on Mean Absolute Error followed by short probabilistic fine-tuning on the Continuous Ranked Probability Score (CRPS) using Monte Carlo Dropout for stochasticity. As a result, our model matches or exceeds the probabilistic skill of GenCast and IFS ENS at 1.5-degree resolution while reducing training compute by over 10x compared to leading CRPS-based models and inference latency by over 10x compared to diffusion-based models. U-Cast trains in under 12 H200 GPU-days and generates a 60-step ensemble forecast in 11 seconds. These results suggest that scalable, general-purpose architectures paired with efficient training curricula can match complex domainspecific designs at a fraction of the cost, opening the training of frontier probabilistic weather models to the broader community},
     url = {https://arxiv.org/abs/2604.09041},
     pdf = {https://arxiv.org/abs/2604.09041},
     code={https://github.com/Rose-STL-Lab/u-cast},
