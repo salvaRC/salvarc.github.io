@@ -1,4 +1,5 @@
 ---
+published: false # template/duplicate page, not part of the public site
 layout: page
 title: projects
 permalink: /projects/

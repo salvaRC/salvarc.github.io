@@ -4,4 +4,4 @@ date: 2022-06-15
 inline: true
 ---
 
-Started a research internship at Palo Alto Research Company (PARC) on climate+ML!
+Started a research internship at the Palo Alto Research Center (PARC) on ML for climate modeling!

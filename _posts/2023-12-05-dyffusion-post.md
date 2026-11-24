@@ -1,4 +1,5 @@
 ---
+published: false # template/duplicate page, not part of the public site
 layout: post
 mathjax: true
 title:  "DYffusion: A Dynamics-informed Diffusion Model for Spatiotemporal Forecasting"

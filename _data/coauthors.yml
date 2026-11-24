@@ -42,10 +42,6 @@
   - firstname: ["Brian"]
     url: https://scholar.google.com/citations?user=t2tJH5EAAAAJ
 
-"Joren":
-    - firstname: ["Hailey"]
-      url: https://haileyjoren.github.io/
-
 "Kreis":
   - firstname: ["Karsten"]
     url: https://karstenkreis.github.io/
@@ -74,13 +70,10 @@
   - firstname: ["Venkatesh"]
     url: https://scholar.google.com/citations?user=IZUbyQkAAAAJ&hl=en
 
-"Ramesh*":
-  - firstname: ["Venkatesh"]
-    url: https://scholar.google.com/citations?user=IZUbyQkAAAAJ&hl=en
 
 "Rolnick":
   - firstname: ["David"]
-    url: http://www.davidrolnick.com/
+    url: https://davidrolnick.com/
 
 "Vahdat":
   - firstname: ["Arash"]
@@ -102,6 +95,34 @@
   - firstname: ["Bo"]
     url: https://b-zhao.github.io/
 
+"Babenko":
+  - firstname: ["Boris"]
+    url: https://bbabenko.github.io/
 
+"Berg-Kirkpatrick":
+  - firstname: ["Taylor"]
+    url: https://cseweb.ucsd.edu/~tberg/
 
+"Ramea":
+  - firstname: ["Kalai"]
+    url: https://www.kalairamea.com/
 
+"Rasp":
+  - firstname: ["Stephan"]
+    url: https://raspstephan.github.io/
+
+"Joren":
+  - firstname: ["Hailey"]
+    url: https://scholar.google.com/citations?user=4AYEgr8AAAAJ&hl=en
+
+"Shalev":
+  - firstname: ["Guy"]
+    url: https://scholar.google.com/citations?user=zNMut8wAAAAJ&hl=en
+
+"Varambally":
+  - firstname: ["Sumanth"]
+    url: https://vsumanth99.github.io
+
+"Fisher":
+  - firstname: ["Marshall"]
+    url: https://mhfisher.github.io

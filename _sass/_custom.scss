@@ -1,0 +1,356 @@
+/*******************************************************************************
+ * Site-specific customizations (loaded last, overrides the al-folio defaults).
+ ******************************************************************************/
+
+// UCSD gold (#C69214) only reaches a 2.8:1 contrast ratio on white, which is hard
+// to read for link text. In light mode, use a deeper gold for text (5:1, WCAG AA)
+// and keep the brighter gold for accents and hover. Dark mode keeps UCSD gold (6:1).
+:root {
+  --global-theme-color: #8f6a0c;
+  --global-hover-color: #{$ucsd-gold};
+  --global-accent-color: #{$ucsd-gold};
+  --global-accent-bg: rgba(198, 146, 20, 0.09);
+  --global-text-color: #1f2328;
+  --global-text-color-light: #5f6368;
+}
+
+html[data-theme='dark'] {
+  --global-theme-color: #{$ucsd-gold};
+  --global-hover-color: #e0b54a;
+  --global-accent-color: #{$ucsd-gold};
+  --global-accent-bg: rgba(198, 146, 20, 0.14);
+  --global-text-color: #e6e6e6;
+  --global-text-color-light: #a8a8a8;
+}
+
+// Typography: Roboto Light (300) is too thin for body copy on many screens.
+body {
+  font-weight: 400;
+}
+.post article p,
+.post article li {
+  line-height: 1.65;
+}
+.post-title {
+  font-weight: 300;
+}
+
+// ----------------------------------------------------------------------------
+// Home page header
+// ----------------------------------------------------------------------------
+.profile-header {
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+
+  .profile-photo {
+    figure {
+      margin: 0 0 1rem 0;
+    }
+    img {
+      width: 100%;
+      max-width: 220px;
+    }
+  }
+
+  .post-title {
+    margin-bottom: 0.1rem;
+  }
+
+  .tagline {
+    color: var(--global-text-color-light);
+    font-size: 1.05rem;
+    margin-bottom: 0.9rem;
+    letter-spacing: 0.01em;
+  }
+
+  .desc {
+    margin-bottom: 1rem;
+    line-height: 1.65;
+  }
+}
+
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1rem;
+
+  .btn-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--global-theme-color);
+    color: var(--global-theme-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    &:hover {
+      text-decoration: none;
+      background-color: var(--global-theme-color);
+      color: var(--global-bg-color);
+    }
+  }
+
+  .social {
+    .contact-icons {
+      font-size: 1.6rem;
+      a {
+        margin-right: 0.55rem;
+      }
+    }
+  }
+}
+
+// Inline SVG social icons (e.g. Bluesky, which Font Awesome 5 does not include)
+.social .contact-icons a svg.social-svg,
+.navbar-brand.social a svg.social-svg {
+  width: 0.92em;
+  height: 0.92em;
+  vertical-align: -0.08em;
+  fill: var(--global-text-color);
+  transition: fill 0.2s ease-in-out;
+}
+.social .contact-icons a:hover svg.social-svg,
+.navbar-brand.social a:hover svg.social-svg {
+  fill: var(--global-theme-color);
+}
+
+// Bold text inside links should keep the link color (base styles force text color on <strong>).
+a strong,
+a b {
+  color: inherit;
+}
+
+// Research highlights list on the home page
+.bio {
+  .highlights-intro {
+    margin-bottom: 0.35rem;
+  }
+  ul.highlights {
+    padding-left: 1.2rem;
+    margin-bottom: 1.25rem;
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+}
+
+// "On the job market" call-out
+.job-market {
+  display: flex;
+  gap: 0.9rem;
+  align-items: baseline;
+  padding: 0.9rem 1.1rem;
+  margin: 0 0 1.75rem 0;
+  border-left: 4px solid var(--global-accent-color);
+  border-radius: 0.35rem;
+  background-color: var(--global-accent-bg);
+  line-height: 1.6;
+
+  > i {
+    color: var(--global-accent-color);
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Home page sections (news, selected publications)
+// ----------------------------------------------------------------------------
+.post article h2,
+.news h2,
+.publications h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 2.25rem;
+}
+
+.news {
+  .table {
+    margin-bottom: 0.25rem;
+  }
+  th {
+    white-space: nowrap;
+    font-weight: 500;
+    color: var(--global-text-color-light);
+    width: 6.5rem;
+  }
+  td, th {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    line-height: 1.5;
+  }
+  .news-all {
+    font-size: 0.9rem;
+  }
+}
+
+.section-link {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+// ----------------------------------------------------------------------------
+// Publications
+// ----------------------------------------------------------------------------
+.publications {
+  .pub-note {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+  }
+
+  h2.pub-category {
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-bottom: 0.4rem;
+    margin-top: 2.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  ol.bibliography li {
+    margin-bottom: 1.4rem;
+
+    .abbr {
+      abbr {
+        // white on deep gold in light mode, dark on gold in dark mode (both >= 4.5:1)
+        color: var(--global-bg-color);
+        background-color: var(--global-theme-color);
+        min-width: 5.25rem;
+        text-align: center;
+      }
+      .award {
+        display: inline-block;
+        margin-top: 0.3rem;
+        min-width: 5.25rem;
+        text-align: center;
+      }
+    }
+
+    .title {
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 0.1rem;
+    }
+
+    .author {
+      color: var(--global-text-color);
+      em {
+        font-style: normal;
+        font-weight: 600;
+        border-bottom: none;
+      }
+      a.more-authors {
+        color: var(--global-text-color-light);
+        font-size: 0.9em;
+        cursor: pointer;
+        border-bottom: 1px dashed var(--global-text-color-light);
+        &:hover {
+          color: var(--global-theme-color);
+          text-decoration: none;
+        }
+      }
+    }
+
+    .periodical {
+      color: var(--global-text-color-light);
+    }
+
+    .honor {
+      color: var(--global-theme-color);
+      font-weight: 500;
+      font-size: 0.925rem;
+      margin-top: 0.1rem;
+    }
+
+    .links {
+      margin-top: 0.35rem;
+      a.btn {
+        font-size: 0.72rem;
+        border-radius: 0.25rem;
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}
+
+// ----------------------------------------------------------------------------
+// CV page
+// ----------------------------------------------------------------------------
+.cv-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+
+  .post-title {
+    margin-bottom: 0;
+  }
+}
+
+.cv-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--global-theme-color);
+  color: var(--global-theme-color);
+  font-weight: 500;
+  &:hover {
+    text-decoration: none;
+    background-color: var(--global-theme-color);
+    color: var(--global-bg-color);
+  }
+}
+
+// Embedded PDF CV (desktop/tablet). Phones get a button instead, because embedded
+// PDFs only show the first page (iOS) or nothing at all (Android).
+.cv-embed {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.35rem;
+  overflow: hidden;
+  iframe {
+    display: block;
+    width: 100%;
+    height: 85vh;
+    min-height: 640px;
+    border: 0;
+  }
+}
+
+.cv-mobile {
+  display: none;
+  margin-top: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .cv-embed {
+    display: none;
+  }
+  .cv-mobile {
+    display: block;
+  }
+  .cv-header .cv-download {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .profile-header .profile-photo img {
+    max-width: 180px;
+  }
+}
+
+// Footer (non-fixed)
+footer.sticky-bottom {
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: 3rem !important;
+}

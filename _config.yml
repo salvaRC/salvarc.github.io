@@ -7,11 +7,15 @@ first_name: Salva # your first name
 middle_name: 
 last_name: Rühling Cachay # your last name
 email: salvaruehling@gmail.com
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  The personal website Salva Rühling Cachay .
+description: >- # the ">" symbol means to ignore newlines until "footer_text:"
+  Salva Rühling Cachay is a PhD candidate at UC San Diego developing generative AI for probabilistic weather forecasting, climate modeling, and high-dimensional scientific systems.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: Salva Rühling Cachay, machine learning, AI, artificial intelligence, deep learning, climate, weather, generative modeling # add your own keywords or leave empty
+keywords: Salva Rühling Cachay, Salva Ruhling Cachay, machine learning, AI for science, generative modeling, diffusion models, probabilistic forecasting, weather forecasting, climate modeling, UC San Diego # add your own keywords or leave empty
+
+person: # used for the schema.org "Person" metadata on the home page
+  job_title: PhD Candidate in Computer Science
+  affiliation: University of California, San Diego
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.ico  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -45,7 +49,7 @@ rss_icon: false
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 # Dimensions
 max_width: 800px
@@ -56,9 +60,9 @@ max_width: 800px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://salvarc.github.io/assets/img/og-image.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -68,6 +72,7 @@ email: salvaruehling@gmail.com
 github_username: salvaRC # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: salvaRC7    #your Twitter handle
+bluesky_username: salvarc7.bsky.social # your Bluesky handle
 linkedin_username: salva-rc # your LinkedIn user name
 scholar_userid: 8RHc4eQAAAAJ # your Google Scholar ID
 orcid_id: # your ORCID ID
@@ -127,14 +132,14 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
+    output: false # all news items are shown inline (home page and /news/)
     permalink: /news/:path/
   projects:
     output: true
     permalink: /projects/:path/
 
 news_scrollable: false # adds a vertical scroll bar if there are more than 3 news items
-news_limit: 5 # leave blank to include all the news in the `_news` folder
+news_limit: 6 # leave blank to include all the news in the `_news` folder
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -160,6 +165,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - README.md
+  - Dockerfile
+  - LICENSE
+  - notCNAME
 keep_files:
   - CNAME
   - .nojekyll
@@ -244,7 +253,7 @@ scholar:
   query: "@*"
 
 # Filter out certain bibtex entry keywords used internally from the bib output
-filtered_bibtex_keywords: [abbr, abstract, arxiv, award, bibtex_show, html, honor, pdf, selected, supp, blog, code, poster, slides, website, preview]
+filtered_bibtex_keywords: [abbr, abstract, arxiv, award, award2, bibtex_show, html, honor, honor2, pdf, selected, supp, blog, code, poster, slides, video, media, website, preview, category]
 
 # Maximum number of authors to be shown, other authors will be visible on hover, leave blank to show all authors
 max_author_limit: 10
