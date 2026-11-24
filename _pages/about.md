@@ -49,7 +49,7 @@ social: true  # includes social icons at the bottom of the page
 <p>
 I am currently a research intern at <a href="https://research.nvidia.com/">NVIDIA</a>,
 working on generative AI for weather and climate with Noah Brenowitz and Mike Pritchard.
-Before that, I interned at <a href="https://research.google/">Google Research</a> (2026),
+Before that, I interned at <a href="https://research.google/">Google</a> (2026),
 <a href="https://www.jumptrading.com">Jump Trading</a> (2025),
 <a href="https://research.nvidia.com/labs/genair/">NVIDIA</a> (2024),
 the <a href="https://allenai.org/climate-modeling">Allen Institute for AI</a> (2023), and
